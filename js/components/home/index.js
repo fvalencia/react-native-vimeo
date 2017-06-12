@@ -39,7 +39,11 @@ class Home extends Component {
         <View style={styles.container}>
           <Header>
             <Left>
+              <Button transparent onPress={this.props.openDrawer}>
+                <Icon active name="menu" />
+              </Button>
             </Left>
+            
             <Body>  
               <Title>{(this.props.name) ? this.props.name : 'Home'}</Title>
             </Body>
